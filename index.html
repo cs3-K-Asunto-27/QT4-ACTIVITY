@@ -3,13 +3,20 @@
   <body>
     <div class="container">
      <center>
-	<h1>Sign Up</h1>
+	<h2>Sign Up</h2>
      </center>	
 	  <form>
          <label for="Name">Name:</label>
          <input type="text" id="Name" name="Name" required>
-
-         <label for="User">Username:</label>
+         	
+	 <label for="Gender">Gender:</label>
+         <select id="gerd" name="Gender">
+           <option value="Male">Male</option>
+           <option value="Female">Female</option>
+           <option value="Prefer not to mention">Prefer Not To Mention</option>
+         </select> 
+		 
+	  <label for="User">Username:</label>
          <input type="text" id="User" name="User" required>
 
          <label for="Pword">Password:</label>
@@ -31,53 +38,52 @@
          <input type="reset" value="Reset">
        </form>
      </div>
-   </body>
+	    <script>
+		</script>
+	 </body>
       <style>
-       body {
-         background-color: #121212;
-         color: #ffffff;
-         margin: 0;
-         padding: 0;
-       }
-       .container {
-         max-width: 500px;
-         margin: 50px auto;
-         padding: 20px;
-         background-color: #212121;
-         
-       }
-        h2 {
-        text-align: center;
-       }
+         body {
+		    font-family: Arial;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #212121;
+        }
         label {
-         display: block;
-         margin-bottom: 5px;
-         font-weight: bold;
-       }
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
         input[type="text"],
         input[type="email"],
         input[type="password"],
+        select,
         textarea {
-         width: 100%;
-         padding: 10px;
-         margin-bottom: 10px;
-         border: 1px solid #424242;
-         box-sizing: border-box;
-         background-color: #333333;
-         color: #ffffff;
-       }
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #424242;
+            box-sizing: border-box;
+            background-color: #333333;
+            color: #ffffff;
+        }
         textarea {
-         height: 100px;
-       }
+            height: 100px;
+        }
         input[type="submit"],
         input[type="reset"] {
-         background-color: #ffffff;
-         color: #000000;
-         padding: 10px 20px;
-         border: none;
-         cursor: pointer;
-         margin-right: 10px;
-       }
-    
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }       
 </style>
 </html>
